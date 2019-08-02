@@ -1,3 +1,5 @@
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -30,5 +32,21 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [autoprefixer()],
+        precision: 8,
+        includePaths: ['src/styles', 'node_modules'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-emotion',
+      options: {
+        sourceMap: true,
+        labelFormat: '[local]',
+        cssPropOptimization: true,
+      },
+    },
   ],
 };
