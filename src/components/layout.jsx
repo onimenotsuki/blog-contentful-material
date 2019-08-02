@@ -8,6 +8,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Global, css } from '@emotion/core';
 
 import Header from './header';
 import '../styles/sass-components/layoud-grid.scss';
@@ -25,6 +26,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Global
+        styles={css`body { margin: 0; }`}
+      />
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
     </>
