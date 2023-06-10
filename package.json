@@ -9,7 +9,7 @@
     "@emotion/styled": "^10.0.14",
     "@material/react-layout-grid": "^0.15.0",
     "autoprefixer": "^9.6.1",
-    "gatsby": "^2.13.39",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-emotion": "^4.1.2",
     "gatsby-plugin-manifest": "^2.2.4",
